@@ -1,0 +1,26 @@
+.main{
+    display: flex;
+    gap: 40px;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.main .grids{
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 500px;
+}
+
+.main .grids .gridContainer{
+    display: flex;
+}
+
+.main .grids .gridChild{
+    /* flex-wrap: wrap; */
+    width: calc(500px / 64);
+    height: calc(calc(500px / 64) - 2px);
+    border: 1px solid black;
+}
